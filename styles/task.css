@@ -104,4 +104,17 @@ h3 {
     border-radius: 10px;
 }
 
+#hPriority {
+    float: right;
+    color: #fb7d44;
+}
 
+#mPriority {
+    float: right;
+    color: #f4ce46;
+}
+
+#lPriority {
+    float: right;
+    color: #2faf65;
+}
