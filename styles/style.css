@@ -1,0 +1,408 @@
+/* ############
+Dashboard
+############ */
+
+
+
+body {
+    font-family: Fantasy, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+   
+}
+
+html, body {
+    height: 100%;
+
+}
+
+
+#sidebar ul {
+    list-style: none;
+}
+
+
+#wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#content {
+    padding: 20px;
+    flex: 1;
+    background-color:white
+}
+
+#top_bar {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    padding: 10px;
+    color: rgb(6, 6, 6);
+    background-color:antiquewhite;
+}
+
+
+.user_avatar {
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%; 
+    margin-right: 50px; 
+    margin-left: 80px;
+}
+
+
+.user_info {
+    display: flex;
+    flex-direction: column; 
+    margin-right: 50px;
+}
+
+
+#main_content {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#left_content, #middle_content, #right_content {
+    flex: 1;
+    padding: 20px;
+}
+
+#left_content h2 {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: 30px;
+    padding-left: 30px;
+}
+#left_content{
+    margin-left: 50px;
+    font-size: larger;
+}
+#middle_content ul li,  #right_content ul li {
+    margin-top: 50px;
+    margin-left: 20px;
+    padding-left: 20px;
+    
+}
+
+
+#middle_content{
+    background-color:antiquewhite;
+    margin-right: 20px;
+    height: 70%;
+    margin-top: 50px;
+
+}
+#right_content{
+    background-color:antiquewhite;
+   margin-right: 50px;
+   height: 70%;
+   margin-top: 50px;
+}
+
+
+/* ################
+GroupTask
+################ */
+
+
+/* header area*/
+#team-name {
+    float: left;
+    font-weight: bold;
+    font-size: 26px;
+    /* padding-top: 20px; */
+    padding: 20px;
+}
+  
+#team-member {
+    float: right;
+    padding: 20px;
+}
+  
+  
+.task-add-btn {
+    /* text-decoration: none; */
+    float: right;
+    font-weight: bolder;
+        /* font-size: 28px; */
+}
+  
+.task-content {
+    float: right;
+    font-size: 16px;
+}
+  
+  
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .main {
+    width: 100%;
+    display: flex;
+    /* flex-direction: row; */
+    flex-grow: 1;
+    /* border: 8px solid rgba(144, 106, 255, 0.832); */
+
+  }
+
+  .content {
+    width: calc(100% - 200px);
+
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* width: 100%; */
+    /* flex-grow: 1; */
+    border: 4px solid rgb(11, 108, 30);
+
+  }
+
+  .fixed-content {
+    height: 90px;
+    width: calc(100% - 200px);
+    /* flex-grow: 1; */
+    background-color: thistle;
+    box-sizing: border-box;
+    border: 4px solid darkmagenta;
+    /* overflow-x: hidden; */
+    width:100%
+
+  }
+
+  .flex-content {
+    overflow-x: hidden;
+    width: calc(100% - 200px);
+
+    /* flex-grow: 1; */
+    background-color: rgb(194, 235, 235);
+    border: 4px solid rgb(238, 132, 11);
+    height: 90%;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  #myKanban {
+    flex-grow: 1;
+    overflow-x: auto;
+    padding: 20px;
+    background-color: rgb(194, 235, 235);
+
+  }
+
+  /* TODO */
+  .info {
+    background: #009eb3;
+  }
+
+  /* ２ */
+  .warning {
+    background: #f4ce46;
+  }
+
+  /* ３ */
+  .success {
+    background: #2faf65;
+  }
+
+  .error {
+    background: #fb7d44;
+  }
+
+  /* add new */
+  .custom-button {
+    background-color: #0E0E52;
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
+
+
+/* ################
+nav-bar
+################ */
+
+.nav-bar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.nav-bar li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+    color: #333; 
+    transition: color 0.3s; 
+}
+
+
+.nav-bar li i {
+    margin-right: 10px;
+}
+
+
+.nav-bar li:hover {
+    color: #d1532c; 
+}
+
+
+.nav-bar li a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+
+.nav-bar li a:hover {
+    text-decoration: underline;
+}
+
+#sidebar {
+    width: 220px;
+    background-color:hsl(187, 91%, 74%);
+    box-sizing: border-box;
+    height: 100% !important;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+#sidebar h2{
+    margin-top: 50px;
+}
+#sidebar ul {
+    list-style: none;
+    padding: 0; 
+    margin-top: 50px;
+    
+}
+#sidebar ul li{
+    margin-bottom: 70px;
+    
+}
+#sidebar ul li i{
+    margin-right: 20px;
+}
+#search {
+    width: 120px;
+    height: 20px;
+  }
+
+
+/* ##########
+Login
+########## */
+
+.form-container{
+    width: 600px;
+    margin-top: 200px; 
+    margin-left: 33%;
+    background-image: url("../img/welcome-image.jpg"); /* 设置背景图片的URL */
+    background-size: 250px; 
+    background-repeat: no-repeat; 
+    background-position: 350px 50px;
+ 
+}
+
+.form-container2{
+    width: 600px;
+    margin-top: 60px; 
+    margin-left: 30%;
+ 
+}
+
+
+.subheading{
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.inputField{
+    width: 300px;
+    border: 1px solid #d4dadc;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 6px;
+}
+
+.input {
+    width: 300px;
+    border: 1px solid #d4dadc;
+    margin: 3px 0;
+    padding: 6px;
+}
+
+.input2 {
+    width: 400px;
+    border: 1px solid #d4dadc;
+    margin: 3px 0;
+    padding: 6px;
+}
+
+.input3 {
+    width: 600px;
+    border: 1px solid #d4dadc;
+    margin: 3px 0;
+    padding: 6px;
+}
+
+.inputField:focus{
+    outline: none;
+    border-color: #263238;
+}
+
+.submit {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    background-color: #de8e5c;
+    padding: 10px 25px;
+    width: 100px;
+    align-items: center; 
+}
+
+.submit2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    background-color: #de8e5c;
+    padding: 10px 25px;
+    width: 300px;
+    display: block; 
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+.submit:hover{
+    background-color: #0d47a1;
+}
+
+#heading{
+    text-align: center;
+}
+
+.center {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+

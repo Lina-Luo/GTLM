@@ -1,0 +1,142 @@
+/* 重置一些默认样式 */
+body, h1, h2, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#wrapper {
+    display: flex;
+}
+
+#sidebar_frame {
+    width: 220px;
+    height: 100vh;
+}
+
+#content {
+    padding: 20px;
+    flex: 1;
+}
+
+/* 其余CSS样式保持不变 */
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#action_bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#search {
+    flex: none;
+    padding: 10px;
+    width: fit-content;
+}
+
+#add_user, #remove_button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#remove_user {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+#remove_input {
+    flex: 1;
+    padding: 10px;
+}
+
+#assign_user {
+    padding: 10px;
+}
+
+#user_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#user_table th {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+#user_table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#prev_page, #next_page {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#page_info {
+    font-weight: bold;
+}
+/* 为侧边栏列表项去除无序列表点 */
+#sidebar ul {
+    list-style: none;
+}
+
+/* Dashboard 页面的 CSS 样式 */
+#wrapper {
+    display: flex;
+    width: 100%;
+}
+#sidebar {
+    width: 220px;
+    background-color:darkgray;
+    box-sizing: border-box;
+    height: 100% !important;
+    display: flex; /* 使用 Flex 布局 */
+    flex-direction: column; /* 垂直排列内部元素 */
+    align-items: center; /* 水平居中内容 */
+}
+#sidebar h2{
+    margin-top: 50px;
+}
+#sidebar ul {
+    list-style: none;
+    padding: 0; /* 去除无序列表的默认内边距 */
+    margin-top: 50px;
+    
+}
+#sidebar ul li{
+    margin-bottom: 70px;
+    
+}
+#sidebar ul li i{
+    margin-right: 20px;/*设置图标和字之间的间距*/
+}
+#search {
+    width: 120px; /* 设置搜索框的宽度 */
+    height: 20px; /* 设置搜索框的高度 */
+  }

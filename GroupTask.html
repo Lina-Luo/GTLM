@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>GroupTask</title>
+    <script src="./scripts/task.js"></script>
+    <script src="./scripts/main.js"></script>
+    <link rel="stylesheet" href="./styles/task.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div id="sidebar">
+
+        </div>
+        <div class="content">
+            <div class="fixed-content">
+                <div id="team-name">TeamB</div>
+                <div id="team-member">
+                    <img class="" src="./img/user_k_fill.png">
+                    <img class="" src="./img/user_k_fill.png">
+                    <img class="" src="./img/user_k_fill.png">
+                    <a href="../user management.html">
+                        <img class="" src="./img/user_setting_line.png">
+                    </a>
+                    <!-- <i class="fa-solid fa-user"></i> -->
+                </div>
+
+            </div>
+            <div class="flex-content">
+                <div class="task-board">
+                    <div id="toDo" class="task-column" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="filter info">
+                            <h3>To Do</h3>
+                            <div>
+                                <button onclick="sortListByDate('toDo')">Sort by Due Date</button>
+                                <button onclick="sortListByPriority('toDo')">Sort by Priority</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="doing" class="task-column" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="filter warning">
+                            <h3>Doing</h3>
+                            <div>
+                                <button onclick="sortListByDate('doing')">Sort by Due Date</button>
+                                <button onclick="sortListByPriority('doing')">Sort by Priority</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="completed" class="task-column" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="filter success">
+                            <h3>Completed</h3>
+                            <div>
+                                <button onclick="sortListByDate('completed')">Sort by Due Date</button>
+                                <button onclick="sortListByPriority('completed')">Sort by Priority</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>

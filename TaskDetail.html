@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task Management</title>
+    <meta name="author" content="Kenneth Yiu" />
+    <link rel="stylesheet" href="./styles/taskDetail.css" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/taskDetail.js"></script>
+</head>
+
+<body>
+    <div id="sidebar"></div>
+    <div class="task-creation">
+        <h1>Task Creation</h1>
+
+        <form id="task-form" action="MyTask.html">
+            <div class="left-column">
+                <h2>Task Details</h2>
+                <label for="task-name">Task Name:</label>
+                <input type="text" id="task-name" name="task-name">
+                <label for="task-description">Task Description:</label>
+                <textarea id="task-description" name="task-description"></textarea>
+            </div>
+            <div class="right-column">
+                <h2>Additional Details</h2>
+                <label for="assignee">Assignee:</label>
+                <input type="text" id="assignee" name="assignee">
+                <label for="status">Task Status:</label>
+                <select id="status" name="status">
+                    <option value="pending">Pending</option>
+                    <option value="in-progress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+                <label for="due-date">Due Date:</label>
+                <input type="date" id="due-date" name="due-date">
+                <label for="attachment">Attachment:</label>
+                <input type="file" id="attachment" name="attachment">
+                <input type="submit" value="Create Task">
+
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

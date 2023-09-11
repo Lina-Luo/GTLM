@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./styles/UserManagement.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/main.js"></script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="sidebar_frame">
+            <div id="sidebar">
+
+            </div>
+        </div>
+        <div id="content">
+            <h1>User Management</h1>
+            <div id="action_bar">
+                <input type="text" id="search" placeholder="Search">
+                <button id="add_user">Add New User</button>
+                <div id="remove_user">
+                    <input id="remove_input" type="text" placeholder="User ID">
+                    <button id="remove_button">Remove User</button>
+                </div>
+                <select id="assign_user">
+                    <option value="">Assign User to the Group</option>
+                    <option value="group1">Group 1</option>
+                    <option value="group2">Group 2</option>
+                    <option value="group3">Group 3</option>
+                </select>
+            </div>
+            <table id="user_table">
+                <thead>
+                    <tr>
+                        <th>User Name</th>
+                        <th>Staff ID</th>
+                        <th>Job Title</th>
+                        <th>User Detail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>name</td>
+                    <td>xxxx</td>
+                    <td>xxxxxxxxxx</td>
+                    <td><a href="#">Details</a></td>
+                </tbody>
+            </table>
+            <div id="pagination">
+                <button id="prev_page">&lt; Previous</button>
+                <button id="goto_front_page"> &lt; &lt; Top </button>
+                <span id="page_info">Page 1 of 10</span>
+                <button id="goto_end_page">End &gt; &gt;</button>
+                <button id="next_page">Next &gt;</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

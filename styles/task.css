@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* Header and Team Info */
+
+#team-name,
+#team-member,
+#user-name {
+    padding: 20px;
+}
+
+#team-name,
+#user-name {
+    float: left;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+#team-member {
+    float: right;
+}
+
+#create-task-btn {
+    padding: 20px;
+    float: right;
+}
+
+
+/* Task Board and Columns */
+
+.task-board {
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.task-column {
+    flex: 1;
+    border: 1px solid #ccc;
+    min-width: 300px;
+    height: 400px;
+    overflow-y: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #eee;
+}
+
+.filter,
+h3 {
+    padding: 10px;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+/* Task Styles */
+
+.task {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+
+/* Buttons and Task Content */
+
+.task-add-btn,
+.task-content {
+    float: right;
+    font-weight: bolder;
+}
+
+.task-content {
+    font-size: 16px;
+}
+
+.custom-button {
+    background-color: #0E0E52;
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+
