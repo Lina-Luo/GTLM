@@ -6,7 +6,6 @@
     <meta name="author" content="Kenneth Yiu" />
     <link rel="stylesheet" href="./styles/taskDetail.css" />
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="./scripts/script.js"></script>
     <script src="./scripts/main.js"></script>
     <script src="./scripts/taskDetail.js"></script>
 </head>
@@ -26,8 +25,15 @@
             </div>
             <div class="right-column">
                 <h2>Additional Details</h2>
-                <label for="assignee">Assignee:</label>
-                <input type="text" id="assignee" name="assignee">
+                <label for="assignee">Assignee:
+                <button type="button" id="add-assignee" onclick="addAssignee()">+ </button></label>
+                <div id="assignee-container">
+                    <select id="assignee" name="assignee[]">
+                        <option value="Tom">Tom</option>
+                        <option value="Alice">Alice</option>
+                        <option value="Sam">Sam</option>
+                    </select>
+                </div>
                 <label for="status">Task Status:</label>
                 <select id="status" name="status">
                     <option value="pending">Pending</option>

@@ -70,3 +70,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+
+#add-assignee {
+    float: right
+}

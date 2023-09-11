@@ -1,11 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Get query parameters from URL
   const urlParams = new URLSearchParams(window.location.search);
-
-  // Fields to populate if query parameters exist
-  const fields = ["task-name", "due-date", "assignee", "status", "priority"];
-
-  // Populate form fields
+  const fields = ["task-name", "due-date", "status", "priority"];
   fields.forEach((field) => {
     const value = urlParams.get(field.replace("-", "_"));
     if (value) {
@@ -14,4 +9,36 @@ document.addEventListener("DOMContentLoaded", function () {
       );
     }
   });
+
+  const assigneeValues = urlParams.get("assignee");
+  if (assigneeValues) {
+    const assigneeContainer = document.getElementById("assignee-container");
+    assigneeContainer.innerHTML = "";
+    const assignees = assigneeValues.split(",");
+    assignees.forEach((assignee) => {
+      const newAssignee = document.createElement("select");
+      newAssignee.name = "assignee[]";
+      newAssignee.innerHTML = `
+      <option value="Tom">Tom</option>
+      <option value="Alice">Alice</option>
+      <option value="Sam">Sam</option>
+  `;
+      newAssignee.value = decodeURIComponent(assignee.replace(/\+/g, " "));
+      assigneeContainer.appendChild(newAssignee);
+    });
+  }
 });
+
+function addAssignee() {
+  const container = document.getElementById("assignee-container");
+
+  const newAssignee = document.createElement("select");
+  newAssignee.name = "assignee[]";
+  newAssignee.innerHTML = `
+      <option value="Tom">Tom</option>
+      <option value="Alice">Alice</option>
+      <option value="Sam">Sam</option>
+  `;
+
+  container.appendChild(newAssignee);
+}
